@@ -3,7 +3,6 @@ from sqlalchemy.dialects.mysql import BINARY
 from datetime import datetime, date, timezone
 import uuid
 
-
 class User(SQLModel, table=True):
 
     __tablename__ = "users"
@@ -18,7 +17,7 @@ class User(SQLModel, table=True):
     )
     
     username: str
-    email: str
+    email: str = Field(unique=True)
     password_hash: str = Field(exclude=True)
     is_verified: bool = Field(default=False)
     created_at: date = Field(default_factory=lambda: datetime.now(timezone.utc))

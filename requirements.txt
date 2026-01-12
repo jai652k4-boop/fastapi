@@ -6,3 +6,6 @@ pydantic-settings
 sqlmodel
 alembic
 dotenv
+passlib[bcrypt]
+bcrypt==4.1.2
+pyjwt

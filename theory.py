@@ -3,6 +3,11 @@
 # you going to have code that's going to relied upon by other code
 
 
+# to create a token, in python terminal
+
+# import secrets
+# >>> secrets.token_hex(16)
+
 # what is alembic
 # what is sqlalchemy
 # what is dunder method
