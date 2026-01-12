@@ -1,0 +1,8 @@
+aiomysql
+pymysql
+fastapi[all]
+scalar_fastapi
+pydantic-settings
+sqlmodel
+alembic
+dotenv
